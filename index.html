@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number!</title>
+    <link rel="shortcut icon" href="images/title-tab.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+
+    <main class="main">
+
+        <div class="container">
+
+            <section class="game">
+
+                <div class="head">
+
+                    <h1 class="title">Guess My Number</h1>
+                    <p class="subtitle">Enter a number between 1 and 50!</p>
+
+                </div>
+
+                <div class="game-card">
+
+                    <div class="guess-numb">
+                        <strong class="number">?</strong>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Current Guess</label>
+                        <input type="number" class="guess-input" autocomplete="off" placeholder="Enter Guess">
+                    </div>
+
+                    <div class="Submit">
+                        <button class="btn-submit">Submit Guess 👾</button>
+                    </div>
+
+                    <div class="status-row">
+                        <p class="status-message error">Status 📊 <span class="status0"></span><span
+                                class="status1"></span><span class="win"></span></p>
+                        <p class="attempts-score">💯Attempts: <span class="chance">15</span>
+                            🥇Highscore: <span class="score">0</span></p>
+                    </div>
+
+                    <div class="restart">
+                        <button class="btn-restart">Restart Game🔄</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+
+</html>

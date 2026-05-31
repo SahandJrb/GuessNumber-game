@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/background1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1520px;
+  padding: 0;
+}
+
+/*---------------- main --------------------*/
+
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.main .game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main .game .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .game .head .title {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #ffffff, #cfe9ff);
+  -webkit-background-clip: text;
+  text-shadow:
+    0 0 2px rgba(126, 231, 255, 0.35),
+    0 0 30px rgba(56, 240, 255, 0.45),
+    0 0 40px rgba(56, 240, 255, 0.3);
+}
+
+.main .game .head .subtitle {
+  font-size: 22px;
+  color: gray;
+}
+
+.main .game .game-card {
+  width: 100%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main .game .game-card .guess-numb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .game .game-card .guess-numb .number {
+  color: black;
+  background-color: white;
+  padding: 15px 40px 15px 40px;
+  font-size: 52px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.main .game .game-card .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .game .game-card .input-group > label {
+  font-size: 20px;
+  color: gray;
+}
+
+.main .game .game-card .input-group > input {
+  font-size: 24px;
+  font-weight: 600;
+  height: 50px;
+  text-align: center;
+  color: #eaf4ff;
+  background: #263348;
+  border-radius: 12px;
+  padding: 5px 10px;
+  box-shadow:
+    0 0 8px rgba(39, 230, 230, 0.8),
+    0 0 20px rgba(39, 230, 230, 0.4);
+  width: 100%;
+}
+
+.main .game .game-card .input-group > input:focus {
+  border: 2px solid #27e6e6;
+  outline: none !important;
+}
+
+.main .game .game-card .input-group > input::placeholder {
+  color: #6e7f97;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.main .game .game-card .Submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .game .game-card .Submit .btn-submit {
+  padding: 5px;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(90deg, #1e90ff, #27e6e6);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 14px;
+  outline: none;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 150, 255, 0.35);
+  transition: all 0.3s;
+}
+
+.main .game .game-card .status-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main .game .game-card .status-row .status-message,
+.main .game .game-card .status-row .attempts-score {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  background: #263348;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.648);
+}
+
+.main .game .game-card .status-row .status-message .status0 {
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main .game .game-card .status-row .status-message .status1 {
+  color: green;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main .game .game-card .status-row .status-message .win {
+  color: blue;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main .game .game-card .status-row .attempts-score {
+  gap: 10px;
+}
+
+.main .game .game-card .restart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .game .game-card .restart .btn-restart {
+  background: transparent;
+  border: 2px solid #c084fc;
+  color: #c084fc;
+  box-shadow:
+    0 0 10px rgba(192, 132, 252, 0.5),
+    0 0 20px rgba(192, 132, 252, 0.3);
+  padding: 5px;
+  height: 50px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 14px;
+  outline: none;
+  border: none;
+}
+
+/*---------------- /main --------------------*/

@@ -1,0 +1,65 @@
+/* فایل: mobile.css */
+
+@media (max-width: 768px) {
+  /* تنظیم فاصله از بالای صفحه و ایجاد حاشیه در کناره‌ها */
+  .main {
+    margin-top: 50px;
+    padding: 0 15px;
+  }
+
+  /* کوچک‌تر کردن سایز عنوان‌ها */
+  .main .game .head .title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .main .game .head .subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  /* تنظیم کارت بازی برای عرض موبایل */
+  .main .game .game-card {
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* تغییر سایز بخش نمایش علامت سوال / عدد */
+  .main .game .game-card .guess-numb .number {
+    font-size: 38px;
+    padding: 10px 30px;
+  }
+
+  /* تنظیم فیلد ورودی عدد */
+  .main .game .game-card .input-group > label {
+    font-size: 16px;
+  }
+
+  .main .game .game-card .input-group > input {
+    font-size: 20px;
+    height: 45px;
+  }
+
+  /* تنظیم دکمه‌ها */
+  .main .game .game-card .Submit .btn-submit,
+  .main .game .game-card .restart .btn-restart {
+    font-size: 16px;
+    height: 45px;
+  }
+
+  /* تنظیم سایز متن پیام‌ها و امتیازات */
+  .main .game .game-card .status-row .status-message,
+  .main .game .game-card .status-row .attempts-score {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  /* شکستن خط رکورد و تعداد تلاش‌ها در صورت کمبود فضا */
+  .main .game .game-card .status-row .attempts-score {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
